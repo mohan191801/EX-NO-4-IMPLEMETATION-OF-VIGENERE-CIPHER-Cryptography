@@ -1,18 +1,13 @@
-# EX-NO-4-IMPLEMETATION-OF-VIGENERE-CIPHER
- 
-
-## AIM:
-
+EX-NO-4-IMPLEMETATION-OF-VIGENERE-CIPHER
+NAME: MOHAN M
+REG NO: 2305001018
+AIM:
 To implement the Vigenere Cipher substitution technique using C program.
 
-## DESCRIPTION:
+DESCRIPTION:
+To encrypt, a table of alphabets can be used, termed a tabula recta, Vigenère square,or Vigenère table. It consists of the alphabet written out 26 times in differnt rows, each alphabet shifted cyclically to the left compared to the previous alphabet, corresponding to the 26 possible Caesar ciphers. At different points in the encryption process, the cipher uses adifferent alphabet from one of the rows. The alphabet used at each point repeating keyword.depends on a Each row starts with a key letter. The remainder of the row holds the letters A to Z. Although there are 26 key rows shown, you will only use as many keys as there are unique letters in the key string, here just 5 keys, {L, E, M, O, N}. For successive letters of the message, we are going to take successive letters of the key string, and encipher each message letter using its corresponding key row. Choose the next letter of the key, go along that row to find the column heading that atches the message character; the letter at the intersection of [key-row, msg-col] is the enciphered letter.
 
-To encrypt, a table of alphabets can be used, termed a tabula recta, Vigenère square,or Vigenère table. It consists of the alphabet written out 26 times in differnt rows, each alphabet shifted cyclically to the left compared to the previous alphabet, corresponding to the 26 possible Caesar ciphers. At different points in the encryption process, the cipher uses adifferent alphabet from one of the rows. The alphabet used at each point repeating keyword.depends on a Each row starts with a key letter. The remainder of the row holds the letters A to Z. Although there are 26 key rows shown, you will only use as many keys as there are unique letters in the key string, here just 5 keys, {L, E, M, O, N}. For successive letters of the message, we are going to take successive letters of the key string, and encipher each message letter using its corresponding key row. Choose the next letter of the key, go along that row to find the column heading that	atches the message character; the letter at the intersection of
-[key-row, msg-col] is the enciphered letter.
-
-
-## ALGORITHM:
-
+ALGORITHM:
 STEP-1: Arrange the alphabets in row and column of a 26*26 matrix.
 
 STEP-2: Circulate the alphabets in each row to position left such that the first letter is attached to last.
@@ -29,9 +24,7 @@ STEP-7: The junction character where these two meet forms the cipher character.
 
 STEP-8: Repeat the above steps to generate the entire cipher text.
 
-
-## PROGRAM
-```
+PROGRAM
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -68,10 +61,10 @@ int main() {
     printf("Decrypted Text: %s\n", decrypted);
 
     return 0;
-}
-```
-## OUTPUT
+    }
+OUTPUT
 
-## RESULT
+<img width="546" height="290" alt="image" src="https://github.com/user-attachments/assets/3e5a8e06-4366-4dda-8549-3e5b717f6854" />
 
+RESULT
 Thus, Vigenere Cipher substitution technique using C program has been implemented successfully.
